@@ -5,7 +5,7 @@ import output as out
 input=os.listdir("./input")
 
 if len(input)==0:
-    print ("input file is empty.")
+    print ("input file is empty or not.")
 for name in input:
     print (name+":")
     err.test("./input/"+name)
