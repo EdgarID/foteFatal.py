@@ -1,11 +1,12 @@
 import os, os.path
 import typeError as err
 import output as out
+import keyboard as k
 
 input=os.listdir("./input")
 
 if len(input)==0:
-    print ("input file is empty or not.")
+    print ("input file is empty.")
 for name in input:
     print (name+":")
     err.test("./input/"+name)

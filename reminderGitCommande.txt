@@ -1,0 +1,13 @@
+git init            new local repository
+git clone           copies existing repository
+git status          shows the state of your working directory
+git add .           change the state of your working directory
+git pull            merge localy with the latest commit
+git commit -m "why" record the changes and explain them
+git push            only after add pull and commit, send everything to git
+git branch          see available branches
+git switch B        go to branch B (creat it automatically if necessary)
+git merge B         merge the actual branch and the branch B
+git checkout        switch without saving any change you might have done (carefull with that)
+git diff            shows the difference between two directory
+git log             shows history
