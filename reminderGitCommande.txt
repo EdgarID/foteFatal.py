@@ -7,7 +7,7 @@ git commit -m "why" record the changes and explain them
 git push            only after add pull and commit, send everything to git
 git branch          see available branches
 git checkout -b B   creat new branch B
-git switch B        go to branch B
+git switch B        go to branch B (not necessary at creation)
 git merge B         merge the actual branch and the branch B
 git diff            shows the difference between two directory
 git log             shows history
