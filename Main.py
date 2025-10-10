@@ -1,9 +1,6 @@
 import os, os.path
-import stanza
-#import pandas as pd
 
-stanza.download('fr')
-
+import ToyVersion as tv
 import typeError as err
 import output as out
 
@@ -20,7 +17,8 @@ if len(input)==0:
     print ("input file is empty.")
 for name in input:
     print (name+":")
-    err.test("./input/"+name)
-    iden=err.identification("./input/"+name)
-    print(iden)
-    print(out.response(iden))
+    tv.funct("./input/"+name)
+    #err.test("./input/"+name)
+    #iden=err.identification("./input/"+name)
+    #print(iden)
+    #print(out.response(iden))
