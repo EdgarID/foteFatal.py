@@ -1,3 +1,5 @@
+import os, os.path
+
 punct={',','’','«','»','(',')','/',':',';','-','.','?','!','\n'}
 
 def token(file):
@@ -27,3 +29,34 @@ def token(file):
         currentSentence+=[betterToken]
     txt.close()
     return(tokenisation)
+
+def POS(tokens):
+    ret=[]
+    for sentence in tokens:
+        struct=[]
+        for token in sentence:
+            postok=[token]
+            for pos in os.listdir("./dictionary/POS"):
+                file=open(f"dictionary/POS/{pos}")
+                for line in file:
+                    split=""
+                    i=0
+                    while line.split()[0][i]!=',':
+                        split=f"{split}{line.split()[0][i]}"
+                        i=i+1
+                        if i==len(line.split()[0]):     #if it's a locution
+                            break
+                        
+                    if split.lower()==token.lower():
+                        postok+=[pos]
+                file.close()
+            if postok==[token]:
+                return(f"{token.lower()} non trouvé")
+            struct+=[postok]
+            print(postok)
+        ret+=[struct]
+        print(struct)
+    return (ret)
+            
+            
+        
