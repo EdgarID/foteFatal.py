@@ -17,7 +17,8 @@ if len(input)==0:
     print ("input file is empty.")
 for name in input:
     print (name+":")
-    tv.funct("./input/"+name)
+    print(tv.token("./input/"+name))
+    
     #err.test("./input/"+name)
     #iden=err.identification("./input/"+name)
     #print(iden)

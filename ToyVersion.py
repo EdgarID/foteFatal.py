@@ -1,5 +1,6 @@
+punct={',','’','«','»','(',')','/',':',';','-','.','?','!','\n'}
 
-def funct(file):
+def token(file):
     txt=open(file)
     rawTxt=""
     nb=0
@@ -15,7 +16,7 @@ def funct(file):
     for token in split:                 #for the token of the raw tokenisation:
         betterToken=""                  #string to store the better version of tokens
         for char in token:
-            if char in {',','’','«','»','(',')','/',':',';','-','.','?','!','\n'}:
+            if char in punct:
                 currentSentence+=[betterToken,char]
                 betterToken=""
                 if char in {'.','?','!','\n'}:#if it is the end of a sentence
@@ -24,5 +25,5 @@ def funct(file):
             else:
                 betterToken=f"{betterToken}{char}"
         currentSentence+=[betterToken]
-    print(tokenisation)
     txt.close()
+    return(tokenisation)
