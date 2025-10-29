@@ -1,4 +1,3 @@
-
 test=open("./Annotation/Apprenants polonophones du FLE_Licence 2 (annotated).tsv")
 for line in test:
     for i in range (len(line)):
