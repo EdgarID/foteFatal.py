@@ -1,4 +1,4 @@
-# 🧠 Detecterreur
+# 🧠 DetectErreur
 
 > *An intelligent hybrid NLP tool designed to detect, explain, and help prevent French language learner errors.*
 
@@ -6,9 +6,9 @@
 
 ## 📘 Overview
 
-**Detecterreur** is a hybrid Natural Language Processing (NLP) system built to assist **learners of French** by not only correcting written errors but also providing **pedagogically meaningful explanations**.  
+**DetectErreur** is a hybrid Natural Language Processing (NLP) system built to assist **learners of French** by not only correcting written errors but also providing **pedagogically meaningful explanations**.  
 
-While most grammar or spelling correction tools merely detect and fix mistakes, *Detecterreur* goes further: it promotes **understanding**. Each correction comes with **research-supported, constructive feedback** — enabling learners to internalize grammar rules and avoid repeating errors in the future.
+While most grammar or spelling correction tools merely detect and fix mistakes, *DetectErreur* goes further: it promotes **understanding**. Each correction comes with **research-supported, constructive feedback** — enabling learners to internalize grammar rules and avoid repeating errors in the future.
 
 ---
 
@@ -85,9 +85,9 @@ To be determined — this project aims for an **open and educational license** p
 
 ## 🌍 Acknowledgements
 
-Detecterreur is inspired by ongoing efforts in **educational NLP**, **language pedagogy**, and **AI ethics**, and aspires to make intelligent feedback accessible to all learners of French.
+DetectErreur is inspired by ongoing efforts in **educational NLP**, **language pedagogy**, and **AI ethics**, and aspires to make intelligent feedback accessible to all learners of French.
 
 ---
 
 > *“Correcting an error is good; understanding it is better.”*  
-> — The Detecterreur Team
+> — The DetectErreur Team
