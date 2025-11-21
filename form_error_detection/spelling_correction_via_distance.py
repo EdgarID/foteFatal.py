@@ -74,14 +74,14 @@ def correct_word_filtered(word, dictionary, max_len_diff=3):
     best_match = word
     min_distance = float("inf")
 
-    # we choose thhe words that start withe same 2 letters and with len diff at max 3
+    # we choose the words that start with the same 2 letters and with len diff at max 3
     candidates = [
         w for w in dictionary
         if w[:2] == word[:2]  # same first two letters
         and abs(len(w) - len(word)) <= max_len_diff
     ]
 
-    # if there is no word that start withe the same 2 letters then we do the same process but for the first letter only
+    # if there is no word that start with the same 2 letters then we do the same process but for the first letter only
     if not candidates:
         candidates = [
             w for w in dictionary

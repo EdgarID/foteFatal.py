@@ -1,0 +1,4 @@
+from typeErrors import *
+
+prompt=""
+
